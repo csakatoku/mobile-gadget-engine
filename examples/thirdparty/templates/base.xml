@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Module>
+  {% block moduleprefs %}
+  <ModulePrefs title="mobile gadget">
+    <Require feature="opensocial-0.8" />
+  </ModulePrefs>
+  {% endblock %}
+  {% block userprefs %}{% endblock %}
+  <Content type="html" view="profile"><![CDATA[{% block profile %}
+<h1>It works!</h1>
+<p>Hello, profile view</p>
+{% endblock %}]]></Content>
+  <Content type="html" view="canvas"><![CDATA[{% block canas %}
+<h1>It works!</h1>
+<p>Hello, canvas view</p>
+{% endblock %}]]></Content>
+</Module>
